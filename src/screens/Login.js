@@ -38,7 +38,7 @@ class Login extends Component {
           </Text>
         </View>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate("Main")}
+          onPress={() => this.props.navigation.navigate("Register")}
           style={{
             backgroundColor: "#1cd65f",
             width: "80%",
@@ -88,16 +88,20 @@ class Login extends Component {
             </Text>
           </View>
         </View>
-        <Text
-          style={{
-            fontWeight: "bold",
-            fontSize: 20,
-            color: "#aaaaaa",
-            marginTop: 10,
-          }}
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate("Main")}
         >
-          Đăng nhập
-        </Text>
+          <Text
+            style={{
+              fontWeight: "bold",
+              fontSize: 20,
+              color: "#aaaaaa",
+              marginTop: 10,
+            }}
+          >
+            Đăng nhập
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }
